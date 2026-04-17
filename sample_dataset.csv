@@ -1,0 +1,11 @@
+user,action,region,ip,resource,outcome,timestamp
+alice,DescribeInstances,us-east-1,192.168.1.10,arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0,Success,2026-02-22T10:30:00
+bob,ListBuckets,us-west-2,10.0.0.5,arn:aws:s3:::my-bucket,Success,2026-02-22T10:35:00
+charlie,GetObject,eu-west-1,172.16.0.20,arn:aws:s3:::my-bucket/file.txt,Success,2026-02-22T10:40:00
+alice,CreateUser,us-east-1,203.0.113.45,arn:aws:iam::123456789012:user/newuser,Success,2026-02-22T11:00:00
+eve,DeleteUser,ap-northeast-1,198.51.100.78,arn:aws:iam::123456789012:user/olduser,Success,2026-02-22T02:15:00
+admin,AttachUserPolicy,us-east-1,192.168.1.1,arn:aws:iam::123456789012:policy/AdminAccess,Success,2026-02-22T11:30:00
+bob,ConsoleLogin,us-west-2,10.0.0.5,arn:aws:iam::123456789012:user/bob,Failed,2026-02-22T03:45:00
+alice,ConsoleLogin,us-east-1,192.168.1.10,arn:aws:iam::123456789012:user/alice,Failed,2026-02-22T03:50:00
+charlie,RunInstances,eu-west-1,172.16.0.20,arn:aws:ec2:eu-west-1:123456789012:instance/i-abcdef1234567890,Success,2026-02-22T12:00:00
+eve,CreateAccessKey,ap-southeast-1,198.51.100.78,arn:aws:iam::123456789012:user/eve,Success,2026-02-22T01:30:00

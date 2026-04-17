@@ -1,0 +1,137 @@
+[
+  {
+    "user": "john.doe",
+    "action": "DescribeInstances",
+    "region": "us-east-1",
+    "ip": "192.168.1.100",
+    "resource": "arn:aws:ec2:us-east-1:123456789012:instance/i-0abc123def456",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T14:30:00"
+  },
+  {
+    "user": "jane.smith",
+    "action": "ListBuckets",
+    "region": "us-west-2",
+    "ip": "10.20.30.40",
+    "resource": "arn:aws:s3:::company-data-bucket",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T14:35:00"
+  },
+  {
+    "user": "admin.user",
+    "action": "CreateUser",
+    "region": "us-east-1",
+    "ip": "203.0.113.50",
+    "resource": "arn:aws:iam::123456789012:user/backdoor-account",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T02:15:00"
+  },
+  {
+    "user": "developer",
+    "action": "GetObject",
+    "region": "eu-west-1",
+    "ip": "172.16.50.25",
+    "resource": "arn:aws:s3:::project-files/code.zip",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T15:00:00"
+  },
+  {
+    "user": "hacker.attempt",
+    "action": "AttachUserPolicy",
+    "region": "ap-northeast-1",
+    "ip": "198.51.100.200",
+    "resource": "arn:aws:iam::123456789012:policy/AdministratorAccess",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T03:45:00"
+  },
+  {
+    "user": "service.account",
+    "action": "AssumeRole",
+    "region": "us-east-1",
+    "ip": "10.0.1.50",
+    "resource": "arn:aws:iam::123456789012:role/ServiceRole",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T15:10:00"
+  },
+  {
+    "user": "john.doe",
+    "action": "ConsoleLogin",
+    "region": "us-east-1",
+    "ip": "192.168.1.100",
+    "resource": "arn:aws:iam::123456789012:user/john.doe",
+    "outcome": "Failed",
+    "timestamp": "2026-02-22T03:20:00"
+  },
+  {
+    "user": "john.doe",
+    "action": "ConsoleLogin",
+    "region": "us-east-1",
+    "ip": "192.168.1.100",
+    "resource": "arn:aws:iam::123456789012:user/john.doe",
+    "outcome": "Failed",
+    "timestamp": "2026-02-22T03:22:00"
+  },
+  {
+    "user": "john.doe",
+    "action": "ConsoleLogin",
+    "region": "us-east-1",
+    "ip": "192.168.1.100",
+    "resource": "arn:aws:iam::123456789012:user/john.doe",
+    "outcome": "Failed",
+    "timestamp": "2026-02-22T03:25:00"
+  },
+  {
+    "user": "suspicious.user",
+    "action": "DeleteBucket",
+    "region": "ap-southeast-1",
+    "ip": "203.0.113.99",
+    "resource": "arn:aws:s3:::critical-backup-bucket",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T01:30:00"
+  },
+  {
+    "user": "jane.smith",
+    "action": "PutObject",
+    "region": "us-west-2",
+    "ip": "10.20.30.40",
+    "resource": "arn:aws:s3:::company-data-bucket/report.pdf",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T15:20:00"
+  },
+  {
+    "user": "external.contractor",
+    "action": "CreateAccessKey",
+    "region": "eu-central-1",
+    "ip": "198.51.100.150",
+    "resource": "arn:aws:iam::123456789012:user/external.contractor",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T23:45:00"
+  },
+  {
+    "user": "admin.user",
+    "action": "AuthorizeSecurityGroupIngress",
+    "region": "us-east-1",
+    "ip": "203.0.113.50",
+    "resource": "arn:aws:ec2:us-east-1:123456789012:security-group/sg-0123456789abcdef",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T02:30:00"
+  },
+  {
+    "user": "developer",
+    "action": "RunInstances",
+    "region": "eu-west-1",
+    "ip": "172.16.50.25",
+    "resource": "arn:aws:ec2:eu-west-1:123456789012:instance/i-newinstance123",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T15:30:00"
+  },
+  {
+    "user": "data.analyst",
+    "action": "DescribeSecurityGroups",
+    "region": "us-west-2",
+    "ip": "10.20.30.50",
+    "resource": "arn:aws:ec2:us-west-2:123456789012:security-group/sg-analytics",
+    "outcome": "Success",
+    "timestamp": "2026-02-22T16:00:00"
+  }
+]
